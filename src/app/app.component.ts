@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+	mobileNav: boolean = false;
+
+	toggleNav () {
+		this.mobileNav = !this.mobileNav;
+	}
 }
