@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InvoicesComponent } from './invoices/invoices.component';
 import { AgentsComponent } from './agents/agents.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ProfileComponent } from './profile/profile.component';
     AppComponent,
     InvoicesComponent,
     AgentsComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
