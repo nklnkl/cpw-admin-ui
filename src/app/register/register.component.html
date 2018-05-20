@@ -3,21 +3,21 @@
 	<hr/>
 	<div class="form-group">
 		<label for="email">Email address</label>
-		<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+		<input type="email" class="form-control" [(ngModel)]="email" aria-describedby="emailHelp" placeholder="Enter email">
 		<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 	</div>
 	<div class="form-group">
 		<label for="password">Password</label>
-		<input type="password" class="form-control" id="password" placeholder="Password">
+		<input type="password" class="form-control" [(ngModel)]="password" placeholder="Password">
 	</div>
 	<div class="form-group">
 		<label for="confirmPassword">Confirm Password</label>
-		<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+		<input type="password" class="form-control" [(ngModel)]="confirmPassword" placeholder="Confirm Password">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">Key</label>
-		<input type="password" class="form-control" id="key" placeholder="Key">
+		<input type="password" class="form-control" [(ngModel)]="key" placeholder="Key">
 	</div>
-	<button class="btn btn-primary btn-block">Register</button>
+	<button class="btn btn-primary btn-block" (click)="register()">Register</button>
 </form>
 
