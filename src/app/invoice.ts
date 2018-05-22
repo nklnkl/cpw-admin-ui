@@ -4,6 +4,7 @@ export class Invoice {
 	address: string;
 	email: string;
 	phone: string;
+	agent: number;
 
 	adultBikesQty: number;
 	adultBikesHrs: number;
