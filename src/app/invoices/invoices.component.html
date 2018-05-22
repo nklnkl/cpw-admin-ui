@@ -2,7 +2,7 @@
 	<h2>Invoices</h2>
 	<hr/>
 	<div class="form-group">
-		<input type="text" class="form-control" [(ngModel)]="agentNumber" aria-describedby="agentNumber" placeholder="Search by agent number">
+		<input type="text" class="form-control" name="agentNumber" [(ngModel)]="agentNumber" aria-describedby="agentNumber" placeholder="Search by agent number">
 	</div>
 </form>
 
@@ -14,11 +14,30 @@
 		<span class="col-3">
 			phone
 		</span>
-		<span class="col-3">
+		<span class="col-2">
 			total
+		</span>
+		<span class="col-1">
+			agent
 		</span>
 		<span class="col-3">
 			date
 		</span>
 	</li>
+	<li class="row" *ngFor="let invoice of invoices">
+		<span class="col-3">
+			{{ invoice.name }}
+		</span>
+		<span class="col-3">
+			{{ invoice.phone }}
+		</span>
+		<span class="col-2">
+			{{ invoice.total }}
+		</span>
+		<span class="col-1">
+			{{ invoice.agent }}
+		</span>
+		<span class="col-3">
+			{{ invoice.date }}
+		</span>
 </ul>
