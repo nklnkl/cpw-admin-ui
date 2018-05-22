@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvoicesComponent implements OnInit {
 
+	agentNumber: string;
+
   constructor() { }
 
   ngOnInit() {
